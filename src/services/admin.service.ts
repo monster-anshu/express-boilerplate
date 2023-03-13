@@ -1,4 +1,4 @@
-import { HttpException } from '@exceptions/HttpException';
+import { HttpException } from '@utils/response';
 
 export default class AdminService {
   public async login(email: string, password: string) {

@@ -1,4 +1,4 @@
-import { HttpException } from '@exceptions/HttpException';
+import { HttpException } from '@utils/response';
 import { fromZodError } from 'zod-validation-error';
 import { ZodObject } from 'zod';
 

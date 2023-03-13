@@ -1,3 +1,4 @@
+import { HttpResponse } from '@/utils/response';
 import AdminService from '@services/admin.service';
 import validateZod from '@utils/zod';
 import AdminValidation from '@validations/admin.validation';
@@ -13,7 +14,7 @@ export default class AdminController {
       const { email, password } = validateZod(body, this.adminValidation.login);
       const token = await this.adminService.login(email, password);
       res.cookie('token', token);
-      res.json(token);
+      res.json(new HttpResponse(token));
     } catch (error) {
       next(error);
     }

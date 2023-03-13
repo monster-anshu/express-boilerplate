@@ -21,16 +21,15 @@
     "strict": true,
     "baseUrl": "src",
     "paths": {
+      "@/*": ["*"],
       "@config": ["config"],
       "@controllers/*": ["controllers/*"],
-      "@exceptions/*": ["exceptions/*"],
       "@interfaces/*": ["interfaces/*"],
       "@middlewares/*": ["middlewares/*"],
       "@routes/*": ["routes/*"],
       "@services/*": ["services/*"],
       "@utils/*": ["utils/*"],
-      "@validations/*": ["validations/*"],
-      "@/*": ["*"]
+      "@validations/*": ["validations/*"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.json", ".env"],
