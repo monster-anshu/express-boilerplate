@@ -1,5 +1,3 @@
 {
-  "*.ts": [
-    "yarn run lint"
-  ]
+  "*.{js,jsx,ts,tsx,css,scss,less,html,vue,md,markdown}": ["eslint --fix", "prettier --write"]
 }
